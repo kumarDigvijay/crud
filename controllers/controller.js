@@ -61,6 +61,7 @@ const update = async (req, res) => {
 
   return res.redirect("/");
 };
+
 const deleteEmployee = async (req, res) => {
   await Employee.deleteOne({ _id: req.params.id });
 
